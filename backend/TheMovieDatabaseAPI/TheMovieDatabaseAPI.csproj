@@ -18,8 +18,8 @@
 
   <ItemGroup>
     <Folder Include="Api\Controllers\" />
-    <Folder Include="Application\CommandSide\Commands\" />
-    <Folder Include="Application\QuerySide\Queries\TestQuery\" />
+    <Folder Include="Application\Commands\" />
+    <Folder Include="Application\Queries\" />
   </ItemGroup>
 
 </Project>
