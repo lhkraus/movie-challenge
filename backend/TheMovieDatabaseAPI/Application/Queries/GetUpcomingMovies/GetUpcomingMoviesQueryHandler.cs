@@ -17,7 +17,7 @@ namespace TheMovieDatabaseAPI.Application.Queries
 
         public async Task<IList<UpcomingMovieViewModel>> Handle(GetUpcomingMoviesQuery request, CancellationToken cancellationToken)
         {
-            var upcomingMovies = await _client.GetUpcomingMoviesAsync(request.Page);
+            var upcomingMovies = await _client.GetUpcomingMoviesAsync(page: request.Page);
             var upcomingMoviesViewModel = upcomingMovies["results"]
                 .ToObject<IList<UpcomingMovieViewModel>>();
 
