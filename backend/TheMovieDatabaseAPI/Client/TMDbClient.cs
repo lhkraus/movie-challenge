@@ -30,7 +30,7 @@ namespace TheMovieDatabaseAPI.Client
 
         public async Task<JObject> GetMovieDetailsAsync(int movieId)
         {
-            var url = QueryHelpers.AddQueryString($"{BASE_ENDPOINT}/genre/movie/{movieId}", "api_key", API_KEY);
+            var url = QueryHelpers.AddQueryString($"{BASE_ENDPOINT}/movie/{movieId}", "api_key", API_KEY);
             var response = await _httpClient.GetAsync(url);
 
             response.EnsureSuccessStatusCode();
