@@ -9,17 +9,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\CommandSide\**" />
+    <Compile Remove="Application\QuerySide\**" />
+    <Content Remove="Application\CommandSide\**" />
+    <Content Remove="Application\QuerySide\**" />
+    <EmbeddedResource Remove="Application\CommandSide\**" />
+    <EmbeddedResource Remove="Application\QuerySide\**" />
+    <None Remove="Application\CommandSide\**" />
+    <None Remove="Application\QuerySide\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR" Version="8.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Api\Controllers\" />
-    <Folder Include="Application\CommandSide\Commands\" />
-    <Folder Include="Application\QuerySide\Queries\TestQuery\" />
   </ItemGroup>
 
 </Project>

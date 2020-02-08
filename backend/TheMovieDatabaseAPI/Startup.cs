@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Reflection;
+using TheMovieDatabaseAPI.Client;
 
 namespace TheMovieDatabaseAPI
 {
@@ -21,6 +23,7 @@ namespace TheMovieDatabaseAPI
         {
             var assembly = Assembly.GetExecutingAssembly();
             services.AddMediatR(assembly);
+            services.AddHttpClient<ITMDbClient, TMDbClient>();
             services
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
