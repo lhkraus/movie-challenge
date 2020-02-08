@@ -8,6 +8,6 @@ namespace TheMovieDatabaseAPI.Client
         Task<JObject> GetUpcomingMoviesAsync(int page);
         Task<JObject> GetMovieDetailsAsync(int movieId);
         Task<JObject> SearchMovieAsync(string title);
-        Task<JObject> GetGenres();
+        Task<JObject> GetMoviesGenres();
     }
 }

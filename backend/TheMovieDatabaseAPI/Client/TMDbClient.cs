@@ -18,7 +18,7 @@ namespace TheMovieDatabaseAPI.Client
             _httpClient = httpClient;
         }
 
-        public async Task<JObject> GetGenres()
+        public async Task<JObject> GetMoviesGenres()
         {
             var url = QueryHelpers.AddQueryString($"{BASE_ENDPOINT}/genre/movie/list", "api_key", API_KEY);
             var response = await _httpClient.GetAsync(url);
