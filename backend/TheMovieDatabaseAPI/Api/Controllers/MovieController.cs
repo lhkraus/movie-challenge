@@ -37,7 +37,9 @@ namespace TheMovieDatabaseAPI.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Search(string title)
         {
-            return Ok();
+            var query = new SearchMoviesQuery(title);
+            var searchedMovies = await _mediator.Send(query);
+            return Ok(searchedMovies);
         }
     }
 }
