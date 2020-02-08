@@ -28,7 +28,9 @@ namespace TheMovieDatabaseAPI.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDetails(int id)
         {
-            return Ok();
+            var query = new GetMovieDetailsQuery(id);
+            var movieDetails = await _mediator.Send(query);
+            return Ok(movieDetails);
         }
 
         [Route("search")]

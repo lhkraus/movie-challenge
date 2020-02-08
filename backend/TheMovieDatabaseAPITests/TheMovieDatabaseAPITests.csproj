@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Content Include=".\TestAssets\getUpcomingMoviesResponse.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include=".\TestAssets\getMovieDetailsResponse.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

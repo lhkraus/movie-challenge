@@ -1,0 +1,87 @@
+{
+  "adult": false,
+  "backdrop_path": "/2WgieNR1tGHlpJUsolbVzbUbE1O.jpg",
+  "belongs_to_collection": null,
+  "budget": 100000000,
+  "genres": [
+    {
+      "id": 10752,
+      "name": "War"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 28,
+      "name": "Action"
+    }
+  ],
+  "homepage": "https://www.1917.movie/",
+  "id": 530915,
+  "imdb_id": "tt8579674",
+  "original_language": "en",
+  "original_title": "1917",
+  "overview": "At the height of the First World War, two young British soldiers, Schofield and Blake are given a seemingly impossible mission. In a race against time, they must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers—Blake's own brother among them.",
+  "popularity": 164.955,
+  "poster_path": "/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+  "production_companies": [
+    {
+      "id": 1522,
+      "logo_path": null,
+      "name": "Neal Street Productions",
+      "origin_country": "GB"
+    },
+    {
+      "id": 7,
+      "logo_path": "/vru2SssLX3FPhnKZGtYw00pVIS9.png",
+      "name": "DreamWorks Pictures",
+      "origin_country": "US"
+    },
+    {
+      "id": 114732,
+      "logo_path": "/tNCbisMxO5mX2X2bOQxHHQZVYnT.png",
+      "name": "New Republic Pictures",
+      "origin_country": "US"
+    },
+    {
+      "id": 121685,
+      "logo_path": "/bAO6cpKP9qoqHoDn4oUjWjZ5auq.png",
+      "name": "Amblin Partners",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2019-12-10",
+  "revenue": 200483309,
+  "runtime": 119,
+  "spoken_languages": [
+    {
+      "iso_639_1": "en",
+      "name": "English"
+    },
+    {
+      "iso_639_1": "fr",
+      "name": "Français"
+    },
+    {
+      "iso_639_1": "de",
+      "name": "Deutsch"
+    }
+  ],
+  "status": "Released",
+  "tagline": "Time is the enemy",
+  "title": "1917",
+  "video": false,
+  "vote_average": 8.1,
+  "vote_count": 2105
+}
