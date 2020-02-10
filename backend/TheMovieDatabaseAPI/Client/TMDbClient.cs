@@ -38,12 +38,13 @@ namespace TheMovieDatabaseAPI.Client
             return await response.Content.ReadAsAsync<JObject>();
         }
 
-        public async Task<JObject> SearchMovieAsync(string movieTitle)
+        public async Task<JObject> SearchMovieAsync(string movieTitle, int page)
         {
             var queryParams = new Dictionary<string, string>()
             {
                 {"api_key", API_KEY },
                 {"query", movieTitle },
+                {"page", page.ToString() },
             };
             var url = QueryHelpers.AddQueryString($"{BASE_ENDPOINT}/search/movie", queryParams);
             var response = await _httpClient.GetAsync(url);

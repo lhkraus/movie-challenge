@@ -17,7 +17,7 @@ namespace TheMovieDatabaseAPI.Application.Queries
 
         public async Task<IList<SearchedMoviesViewModel>> Handle(SearchMoviesQuery request, CancellationToken cancellationToken)
         {
-            var searchedMovies = await _client.SearchMovieAsync(title: request.Title);
+            var searchedMovies = await _client.SearchMovieAsync(title: request.Title, page: request.Page);
             var searchedMoviesViewModel = searchedMovies["results"]
                 .ToObject<IList<SearchedMoviesViewModel>>();
 

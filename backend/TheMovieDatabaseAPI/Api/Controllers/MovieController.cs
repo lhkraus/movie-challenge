@@ -33,11 +33,11 @@ namespace TheMovieDatabaseAPI.Api.Controllers
             return Ok(movieDetails);
         }
 
-        [Route("search")]
+        [Route("search/{page:int}")]
         [HttpGet]
-        public async Task<IActionResult> Search(string title)
+        public async Task<IActionResult> Search(int page, string title)
         {
-            var query = new SearchMoviesQuery(title);
+            var query = new SearchMoviesQuery(title, page);
             var searchedMovies = await _mediator.Send(query);
             return Ok(searchedMovies);
         }
