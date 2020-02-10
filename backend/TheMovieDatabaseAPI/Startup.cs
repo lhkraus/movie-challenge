@@ -40,6 +40,13 @@ namespace TheMovieDatabaseAPI
                 app.UseHsts();
             }
 
+            app.UseCors(
+                builder => builder
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials());
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
